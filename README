@@ -1,0 +1,28 @@
+This module provides an implementation of Gale and Sampson's (1995/2001) "Simple
+Good Turing" algorithm. The main function is simpleGoodTuringProbs(), which
+takes a dictionary of species counts and returns the estimated population
+frequencies of the species, as estimated by the Simple Good Turing method. To
+use this module, you must have scipy and numpy installed.
+
+Also included is a function that uses pylab and matplotlib to draw a useful
+scatterplot for comparing the empirical frequencies against the Simple Good
+Turing estimates.
+
+Depends on reasonably recent versions of scipy and numpy.
+
+Version 0.3: June 21, 2011
+    First github version.
+
+Version 0.2: November 12, 2009. 
+    Added __version__ string.
+    Added check for 0 counts.
+    Don't pollute namespace with "import *".
+    Added loglog keyword argument to plotFreqVsGoodTuring().
+Version 0.1: November 11, 2009.
+
+REFERENCES:
+    William Gale and Geoffrey Sampson. 1995. Good-Turing frequency estimation
+    without tears. Journal of Quantitative Linguistics, vol. 2, pp. 217--37.
+    
+    See also the corrected reprint of same on Sampson's web site.
+
